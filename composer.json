@@ -1,0 +1,31 @@
+{
+    "name": "guil95/enum",
+    "description": "Enum for PHP",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Guilherme Rodrigues",
+            "email": "guilhermerodriguestb@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "guil95\\Enum\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "7.4.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.2"
+    },
+    "scripts": {
+        "tests": "./vendor/bin/phpunit --bootstrap vendor/autoload.php tests --coverage-html build/coverage-report",
+        "open-coverage": "xdg-open build/coverage-report/index.html"
+    }
+}
