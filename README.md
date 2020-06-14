@@ -1,0 +1,2 @@
+# Enum
+Enum for PHP
